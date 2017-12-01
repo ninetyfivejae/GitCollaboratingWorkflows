@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 int resultNumber = Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString());
                 result.setText(Integer.toString(resultNumber));
+
+                Toast.makeText(getApplicationContext(), "This is release-0.1 version", Toast.LENGTH_SHORT).show();
             }
         });
     }
