@@ -28,8 +28,12 @@ public class MainActivity extends AppCompatActivity {
         ronaldoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Real Madrid", Toast.LENGTH_SHORT).show();
+                RonaldoPass();
             }
         });
+    }
+
+    public void RonaldoPass(){
+        Toast.makeText(getApplicationContext(), "Ronaldo passes the ball", Toast.LENGTH_SHORT).show();
     }
 }
