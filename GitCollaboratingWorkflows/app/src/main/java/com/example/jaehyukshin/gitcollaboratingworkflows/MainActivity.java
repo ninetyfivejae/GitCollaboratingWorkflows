@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
         multiplyButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                MultiplyOperation();
             }
         });
 
@@ -64,8 +64,12 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void MinusOperation(){
+    public void MinusOperation() {
         int resultNumber = Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString());
+        result.setText(Integer.toString(resultNumber));
+    }
+    public void MultiplyOperation(){
+        int resultNumber = Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString());
         result.setText(Integer.toString(resultNumber));
     }
 }
