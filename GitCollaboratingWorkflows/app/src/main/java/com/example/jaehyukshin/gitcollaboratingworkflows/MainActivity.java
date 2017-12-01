@@ -19,8 +19,12 @@ public class MainActivity extends AppCompatActivity {
         messiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "FC Barcelona", Toast.LENGTH_SHORT).show();
+                MessiShoot();
             }
         });
+    }
+
+    public void MessiShoot(){
+        Toast.makeText(getApplicationContext(), "Messi shoots in the corner of the left post", Toast.LENGTH_SHORT).show();
     }
 }
