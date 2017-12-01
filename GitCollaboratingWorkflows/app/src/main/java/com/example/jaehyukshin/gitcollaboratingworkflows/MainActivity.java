@@ -35,10 +35,7 @@ public class MainActivity extends AppCompatActivity {
         plusButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                int resultNumber = Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString());
-                result.setText(Integer.toString(resultNumber));
-
-                Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
+                PlusOperation();
             }
         });
 
@@ -64,14 +61,20 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void PlusOperation(){
+        int resultNumber = Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString());
+        result.setText(Integer.toString(resultNumber));
+        Toast.makeText(getApplicationContext(), "This is release-0.2.1 version / Fix the plus bug", Toast.LENGTH_SHORT).show();
+    }
+
     public void MinusOperation() {
         int resultNumber = Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString());
         result.setText(Integer.toString(resultNumber));
-        Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "This is release-0.2.1 version / Fix the plus bug", Toast.LENGTH_SHORT).show();
     }
     public void MultiplyOperation(){
         int resultNumber = Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString());
         result.setText(Integer.toString(resultNumber));
-        Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "This is release-0.2.1 version / Fix the plus bug", Toast.LENGTH_SHORT).show();
     }
 }
