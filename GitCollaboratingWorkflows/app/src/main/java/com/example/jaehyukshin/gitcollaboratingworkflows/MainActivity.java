@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 int resultNumber = Integer.parseInt(firstNumber.getText().toString()) + Integer.parseInt(secondNumber.getText().toString());
                 result.setText(Integer.toString(resultNumber));
 
-                Toast.makeText(getApplicationContext(), "This is release-0.1 version", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -67,9 +67,11 @@ public class MainActivity extends AppCompatActivity {
     public void MinusOperation() {
         int resultNumber = Integer.parseInt(firstNumber.getText().toString()) - Integer.parseInt(secondNumber.getText().toString());
         result.setText(Integer.toString(resultNumber));
+        Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
     }
     public void MultiplyOperation(){
         int resultNumber = Integer.parseInt(firstNumber.getText().toString()) * Integer.parseInt(secondNumber.getText().toString());
         result.setText(Integer.toString(resultNumber));
+        Toast.makeText(getApplicationContext(), "This is release-0.2 version", Toast.LENGTH_SHORT).show();
     }
 }
