@@ -1,7 +1,5 @@
 # GitCollaboratingWorkflows
 
----
-
 ## Comparing workflows / 협업 플로우 비교 정리
 
 Init Commit
