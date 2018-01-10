@@ -80,3 +80,7 @@ develop 브랜치에 릴리스를 할 수 있는 수준만큼 기능이 모이�
 -	실제 공모전 프로젝트 준비하면서 사용한 Gitflow Workflow 브랜치 그래프
 
 ![GitflowExample](http://cfile23.uf.tistory.com/image/99C1D1335A21BB3A3134FD)
+
+---
+
+- [Posted on the blog specifically](http://otakijae.tistory.com/category/Git)
